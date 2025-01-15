@@ -75,6 +75,7 @@ class FullTimeEmployee extends Employee {
     super(first, last);
   }
   getPay(): number {
+    console.log(`For full time pay him/her ${this.salary}`);
     return this.salary;
   }
 }
@@ -89,6 +90,9 @@ class PartTimeEmployee extends Employee {
     super(first, last);
   }
   getPay(): number {
+    console.log(
+      `For partial time pay him/her ${this.hourlyRate * this.hoursWorked}`
+    );
     return this.hourlyRate * this.hoursWorked;
   }
 }

@@ -64,6 +64,7 @@ class FullTimeEmployee extends Employee {
         this.salary = salary;
     }
     getPay() {
+        console.log(`For full time pay him/her ${this.salary}`);
         return this.salary;
     }
 }
@@ -74,6 +75,7 @@ class PartTimeEmployee extends Employee {
         this.hoursWorked = hoursWorked;
     }
     getPay() {
+        console.log(`For partial time pay him/her ${this.hourlyRate * this.hoursWorked}`);
         return this.hourlyRate * this.hoursWorked;
     }
 }

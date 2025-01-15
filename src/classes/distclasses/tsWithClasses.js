@@ -4,6 +4,7 @@ class Player {
         this.first = first;
         this.last = last;
         this._score = _score;
+        this.secretMethod();
     }
     secretMethod() {
         console.log("SECRET METHOD!!");

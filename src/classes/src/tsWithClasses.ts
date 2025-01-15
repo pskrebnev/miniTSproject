@@ -1,9 +1,11 @@
 class Player {
   constructor(
-    public first: string,
-    public last: string,
+    public readonly first: string,
+    public readonly last: string,
     protected _score: number
-  ) {}
+  ) {
+    this.secretMethod();
+  }
 
   private secretMethod(): void {
     console.log("SECRET METHOD!!");

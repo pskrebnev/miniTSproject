@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "lite-server": "^2.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pskrebnev/miniTSproject.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pskrebnev/miniTSproject/issues"
+  },
+  "homepage": "https://github.com/pskrebnev/miniTSproject#readme"
 }

@@ -7,6 +7,13 @@ const btn = document.getElementById("btn")! as HTMLButtonElement; //Type asserti
 const input = document.getElementById("todoinput")! as HTMLInputElement;
 const form = document.querySelector("form")!;
 const list = document.getElementById("todolist")!;
+// alternate way
+// (<HTMLInputElement>input).value = "Hell1";
+
+// action with button
+// btn.addEventListener("click", function () {
+//   alert("Clicked!!");
+// });
 
 const todos: Todo[] = readTodos();
 todos.forEach(createTodo);
@@ -29,6 +36,7 @@ function handleSubmit(e: SubmitEvent) {
     text: input.value,
     completed: false,
   };
+
   createTodo(newTodo);
   todos.push(newTodo);
 

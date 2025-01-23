@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "lodash": "^4.17.21"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/pskrebnev/miniTSproject/issues"
   },
-  "homepage": "https://github.com/pskrebnev/miniTSproject#readme"
+  "homepage": "https://github.com/pskrebnev/miniTSproject#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.17.14"
+  }
 }

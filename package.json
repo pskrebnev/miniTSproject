@@ -1,10 +1,11 @@
 {
-  "name": "minitsproject",
+  "name": "webpack_ts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "serve": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -13,16 +14,13 @@
     "lite-server": "^2.6.1",
     "lodash": "^4.17.21"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pskrebnev/miniTSproject.git"
-  },
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/pskrebnev/miniTSproject/issues"
-  },
-  "homepage": "https://github.com/pskrebnev/miniTSproject#readme",
   "devDependencies": {
-    "@types/lodash": "^4.17.14"
+    "@types/lodash": "^4.14.182",
+    "clean-webpack-plugin": "^4.0.0",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
   }
 }
